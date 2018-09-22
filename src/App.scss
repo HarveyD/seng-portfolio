@@ -21,21 +21,21 @@
   }
 
   h3 {
-    font-size: 1.65rem;
+    font-size: 1.7rem;
   }
 
   h4 {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
   }
 
   h5 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   p {
     margin: .25rem 0 .35rem 0;
     line-height: 1.4;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
 
   .section {
@@ -43,7 +43,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 1.75rem 0 2rem 0;
+    padding: 2rem 0 2.75rem 0;
 
     &.secondary {
       background-color: $background-secondary;
@@ -59,7 +59,7 @@
       flex-direction: column;
       align-items: center;
 
-      max-width: 768px;
+      max-width: 968px;
     }
   }
 }
