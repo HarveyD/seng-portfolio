@@ -3,6 +3,7 @@ import './App.css';
 
 import Landing from './sections/landing/landing';
 import About from './sections/about/about';
+import Experience from './sections/experience/experience';
 
 class App extends React.Component {
   public render() {
@@ -10,6 +11,7 @@ class App extends React.Component {
       <div className="app-container">
         <Landing />
         <About />
+        <Experience />
       </div>
     );
   }
