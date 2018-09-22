@@ -1,6 +1,6 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .experience-container {
+  border-top: 1px solid $info-border-color;
+  border-bottom: 1px solid $info-border-color;
 }
-
-

@@ -5,22 +5,23 @@ import InfoCard, { IInfoCard } from "../../components/info-card/info-card";
 
 const educationList: IInfoCard[] = [
   {
-    logo: 'anu.png',
+    logo: "anu.png",
     headings: {
-      primary: 'Australian National University',
-      secondary: 'Bachelor of Software Engineering (Honours)',
-      tertiary: '2013 - 2016'
+      primary: "Australian National University",
+      secondary: "Bachelor of Software Engineering (Honours)",
+      tertiary: "2013 - 2016"
     },
-    description: 'Undertook a four year Software Engineering degree accredited by Engineers Australia.'
+    description:
+      "Undertook a four year Software Engineering degree accredited by Engineers Australia."
   },
   {
-    logo: 'dara.png',
+    logo: "dara.png",
     headings: {
-      primary: 'Daramalan',
-      secondary: 'Tetiary Education',
-      tertiary: '2007 - 2012'
+      primary: "Daramalan",
+      secondary: "Tetiary Education",
+      tertiary: "2007 - 2012"
     },
-    description: 'Studied here for both highschool and college.',
+    description: "Studied here for both highschool and college.",
     isLast: true
   }
 ];

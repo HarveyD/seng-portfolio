@@ -27,9 +27,10 @@ const experienceList: IInfoCard[] = [
     headings: {
       primary: "Commonwealth Bank of Australia",
       secondary: "Software Engineer",
-      tertiary:"February 2017 - January 2018"
+      tertiary: "February 2017 - January 2018"
     },
-    description: "Created a hybrid mobile application using Cordova, Angular 2+ and .NET that greatly improved the experience branch managers have in finding suitable casual or part-time staff replacements."
+    description:
+      "Created a hybrid mobile application using Cordova, Angular 2+ and .NET that greatly improved the experience branch managers have in finding suitable casual or part-time staff replacements."
   },
   {
     headings: {
@@ -37,7 +38,8 @@ const experienceList: IInfoCard[] = [
       secondary: "Junior Developer",
       tertiary: "March 2016 - November 2016"
     },
-    description: "Part-time Backend Developer. Involved with consulting internal clients and writing SQL stored procedures and API's in .NET that met client's data requirements.",
+    description:
+      "Part-time Backend Developer. Involved with consulting internal clients and writing SQL stored procedures and API's in .NET that met client's data requirements.",
     logo: "dod.gif"
   },
   {
@@ -47,7 +49,8 @@ const experienceList: IInfoCard[] = [
       secondary: "Senior Resident",
       tertiary: "January 2016 - November 2017"
     },
-    description: "Senior Resident (AKA Residential Advisor) at the residential college Bruce Hall. Responsible for providing pastoral care and support for over 300 students at the college. Helped organised and facilitate numerous small and large events at the college throughout the year.",
+    description:
+      "Senior Resident (AKA Residential Advisor) at the residential college Bruce Hall. Responsible for providing pastoral care and support for over 300 students at the college. Helped organised and facilitate numerous small and large events at the college throughout the year.",
     isLast: true
   }
 ];
