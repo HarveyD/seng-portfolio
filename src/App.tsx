@@ -5,6 +5,7 @@ import Landing from './sections/landing/landing';
 import About from './sections/about/about';
 import Experience from './sections/experience/experience';
 import Education from './sections/education/education';
+import Projects from './sections/projects/projects';
 
 class App extends React.Component {
   public render() {
@@ -14,6 +15,7 @@ class App extends React.Component {
         <About />
         <Experience />
         <Education />
+        <Projects />
       </div>
     );
   }
