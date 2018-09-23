@@ -1,0 +1,9 @@
+@import "../../variables.scss";
+
+.skills-container {
+  display: flex;
+  flex-direction: row!important;
+  flex-wrap: wrap;
+
+  max-width: 768px;
+}
