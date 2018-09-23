@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 .45rem 1.45rem .45rem;
+  transition: .25s color ease-in-out;
+
+  .icon {
+    font-size: 6.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  &:hover {
+    color: $theme-color;
+  }
+}

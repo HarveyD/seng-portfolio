@@ -7,8 +7,9 @@ const user = {
   title: "Software Engineer"
 };
 
+const headingList = ["About", "Experience", "Projects", "Skills", "Contact"];
+
 const renderHeading = () => {
-  const headingList = ["About", "Experience", "Projects", "Skills", "Contact"];
   return headingList.map((heading, i) => (
     <a className="heading-link" key={i}>
       {heading}
