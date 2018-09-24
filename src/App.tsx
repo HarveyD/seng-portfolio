@@ -7,6 +7,7 @@ import Experience from './sections/experience/experience';
 import Education from './sections/education/education';
 import Projects from './sections/projects/projects';
 import Skills from './sections/skills/skills';
+import Contact from './sections/contact/contact';
 
 class App extends React.Component {
   public render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
         <Education />
         <Projects />
         <Skills />
+        <Contact />
       </div>
     );
   }

@@ -1,0 +1,10 @@
+@import "../../variables.scss";
+
+.contact-container {
+  display: flex;
+  flex-direction: row!important;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  width: 768px;
+}

@@ -49,6 +49,11 @@
       background-color: $background-secondary;
     }
 
+    &.theme {
+      background-color: $theme-color;
+      color: white;
+    }
+
     h2 {
       margin: 0 0 2.5rem 0;
     }

@@ -1,0 +1,54 @@
+@import "../../variables.scss";
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.11);
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.35s ease-in-out;
+
+    .icon {
+      font-size: 4.25rem;
+    }
+  }
+
+  .name {
+    margin-top: 1.2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  &.ln:hover {
+    .icon-container {
+      background-color: rgba(0, 119, 181, 0.7);
+    }
+  }
+
+  &.gh:hover {
+    .icon-container {
+      background-color: rgba(51, 51, 51, 0.7);
+    }
+  }
+
+  &.so:hover {
+    .icon-container {
+      background-color: rgba(188, 187, 187, 0.7);
+    }
+  }
+
+  &.bl:hover {
+    .icon-container {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
