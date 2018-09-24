@@ -1,9 +1,10 @@
 @import "../../variables.scss";
 
-.skills-container {
+.contact-container {
   display: flex;
   flex-direction: row!important;
   flex-wrap: wrap;
+  justify-content: space-around;
 
-  max-width: 768px;
+  width: 768px;
 }

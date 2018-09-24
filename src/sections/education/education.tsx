@@ -18,7 +18,7 @@ const educationList: IInfoCard[] = [
     logo: "dara.png",
     headings: {
       primary: "Daramalan",
-      secondary: "Tetiary Education",
+      secondary: "Secondary Education",
       tertiary: "2007 - 2012"
     },
     description: "Studied here for both highschool and college.",
