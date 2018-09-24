@@ -85,7 +85,7 @@ const projectList: IProject[] = [
     name: "SpookEm",
     description:
       "A tile based horror/survival game made using Processing/Java. (Demo not available).",
-    img: "spookem.png",
+    img: "spookem.jpg",
     tagList: ["Java", "Processing", "Path finding algorithms"],
     url: {
       github: '',
