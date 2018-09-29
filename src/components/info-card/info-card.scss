@@ -3,6 +3,7 @@
 .info-card-container {
   display: flex;
   flex-direction: row;
+  position: relative;
   background-color: $background-primary;
   box-sizing: border-box;
   padding: 1.5rem 1.5rem 0 1.5rem;
@@ -10,10 +11,24 @@
   border-left: 1px solid $info-border-color;
   border-right: 1px solid $info-border-color;
 
+  &:before {
+    content: "";
+    border: 1px solid $theme-color;
+    position: absolute;
+    left: 3.65rem;
+    z-index: 1;
+    height: 100%;
+  }
+
   .logo-container {
+    z-index: 1;
+
     > img {
       width: 64px;
       height: 64px;
+      border-radius: 50%;
+      border: 2px solid $theme-color;
+      z-index: 2;
     }
   }
 
@@ -22,9 +37,16 @@
     flex-direction: column;
     flex-grow: 1;
     padding: 0 0 1.5rem 1.5rem;
+    border-bottom: 1px solid $info-border-color;
+  }
 
-    &:not(.last-card) {
-      border-bottom: 1px solid $info-border-color;
+  &.last-card {
+    &:before {
+      border: none;
+    }
+
+    .details-container {
+      border-bottom: none;
     }
   }
 }
@@ -34,6 +56,10 @@
       width: 100%;
       flex-direction: column;
       padding: 1.75rem 1.65rem 0 1.65rem;
+
+      &:before {
+        border: none;
+      }
 
       .logo-container {
         display: flex;

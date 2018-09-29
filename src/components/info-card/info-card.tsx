@@ -23,12 +23,12 @@ const InfoCard: React.StatelessComponent<IProps> = props => {
   } = props;
 
   return (
-    <div className="info-card-container">
+    <div className={"info-card-container" + (isLast ? " last-card" : "")}>
       <div className="logo-container">
         <img src={require(`../../assets/images/logos/${logo}`)} />
       </div>
 
-      <div className={"details-container " + (isLast ? " last-card" : "")}>
+      <div className="details-container">
         <h3>{headings.primary}</h3>
         <h4>{headings.secondary}</h4>
         <h5>{headings.tertiary}</h5>
