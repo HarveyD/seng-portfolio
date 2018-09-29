@@ -32,7 +32,7 @@ const socialIconList: ISocialIcon[] = [
 
 const Contact: React.StatelessComponent = () => {
   return (
-    <div className="section theme">
+    <div className="section section-theme">
       <h2>Contact</h2>
 
       <div className="contact-container">

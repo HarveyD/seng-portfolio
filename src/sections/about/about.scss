@@ -1,27 +1,24 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .about {
-    background-color: $background-primary;
-    border-bottom: 1px solid #dcd9d9;
+  .about-container {
+    margin: 0;
 
-    .content-container {
-        .portrait {
-            border: 4px solid $theme-color;
-            border-radius: 50%;
-            width: 256px;
-            height: 256px;
-        }
-
-        .about-text {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-
-            margin: 1.25rem 2.25rem 0 2.25rem;
-        }
+    .portrait {
+      border: 4px solid $theme-color;
+      border-radius: 50%;
+      width: 256px;
+      height: 256px;
     }
+
+    .about-text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      margin: 1.25rem 2.25rem 0 2.25rem;
+    }
+  }
 }
-
-

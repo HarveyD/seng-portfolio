@@ -28,7 +28,7 @@ const educationList: IInfoCard[] = [
 
 const Education: React.StatelessComponent = () => {
   return (
-    <div className="section primary">
+    <div className="section section-primary">
       <h2>Education</h2>
 
       <div className="content-container education-container">

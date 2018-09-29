@@ -2,7 +2,7 @@
 
 .app-container {
   font-family: Arial, Helvetica, sans-serif;
-  width: 100vw;
+  overflow-x: hidden;
 
   h1, h2 {
     margin: 0;
@@ -45,11 +45,11 @@
     width: 100%;
     padding: 2.25rem 0 3.75rem 0;
 
-    &.secondary {
+    &.section-secondary {
       background-color: $background-secondary;
     }
 
-    &.theme {
+    &.section-theme {
       background-color: $theme-color;
       color: white;
     }
@@ -66,5 +66,11 @@
 
       max-width: 968px;
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content-container {
+      margin: 0 1.25rem 0 1.25rem;
   }
 }

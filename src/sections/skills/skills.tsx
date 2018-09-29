@@ -32,7 +32,7 @@ const Skills: React.StatelessComponent = () => {
     <div className="section primary">
       <h2>Skills</h2>
 
-      <div className="content-container skills-container">
+      <div className="skills-container">
         {skillList.map((skill, i) => (
           <Skill key={i} skill={skill} />
         ))}

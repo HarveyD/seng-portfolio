@@ -96,7 +96,7 @@ const projectList: IProject[] = [
 
 const Projects: React.StatelessComponent = () => {
   return (
-    <div className="section secondary">
+    <div className="section section-secondary">
       <h2>Projects</h2>
 
       <div className="projects-container">

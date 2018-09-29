@@ -57,7 +57,7 @@ const experienceList: IInfoCard[] = [
 
 const Experience: React.StatelessComponent = () => {
   return (
-    <div className="section secondary">
+    <div className="section section-secondary">
       <h2>Experience</h2>
 
       <div className="content-container experience-container">

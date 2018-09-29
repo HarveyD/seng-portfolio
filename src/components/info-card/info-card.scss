@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: row;
   background-color: $background-primary;
-  padding: 1.5rem 1.75rem 0 1.5rem;
+  box-sizing: border-box;
+  padding: 1.5rem 1.5rem 0 1.5rem;
   width: 768px;
   border-left: 1px solid $info-border-color;
   border-right: 1px solid $info-border-color;
@@ -25,5 +26,23 @@
     &:not(.last-card) {
       border-bottom: 1px solid $info-border-color;
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .info-card-container {
+      width: 100%;
+      flex-direction: column;
+      padding: 1.75rem 1.65rem 0 1.65rem;
+
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+      }
+
+      .details-container {
+        padding: 0 0 1.5rem 0;
+      }
   }
 }
