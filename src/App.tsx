@@ -8,6 +8,7 @@ import Education from './sections/education/education';
 import Projects from './sections/projects/projects';
 import Skills from './sections/skills/skills';
 import Contact from './sections/contact/contact';
+import Footer from './sections/footer/footer';
 
 class App extends React.Component {
   public render() {
@@ -20,6 +21,7 @@ class App extends React.Component {
         <Projects />
         <Skills />
         <Contact />
+        <Footer />
       </div>
     );
   }
