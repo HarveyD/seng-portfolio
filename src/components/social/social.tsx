@@ -19,7 +19,7 @@ const SocialIcon: React.StatelessComponent<IProps> = props => {
   } = props;
 
   return (
-    <div className={`social-container ${id}`}>
+    <div className={`social-item-container ${id}`}>
       <div className="icon-container">
         <i className={`icon fa ${icon}`} />
       </div>
