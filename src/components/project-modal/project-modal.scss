@@ -1,0 +1,109 @@
+@import "../../variables.scss";
+
+.project-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  cursor: pointer;
+
+  .modal-content-container {
+    background-color: $background-secondary;
+    max-width: 37.5%;
+    max-height: 95%;
+    position: relative;
+    overflow-y: auto;
+    cursor: default;
+
+    .modal-body-container {
+      padding: 0.25rem 1.05rem 1.05rem 1.05rem;
+
+      .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 0 0.5rem 0;
+
+        .modal-heading {
+          font-size: 1.75rem;
+          margin: 0;
+        }
+
+        .close-icon {
+          color: rgb(228, 38, 38);
+          font-size: 2.1rem;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .project-image {
+      max-width: 100%;
+    }
+
+    .created-date {
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 0.75rem 0 0.75rem 0;
+    }
+
+    .button-links {
+      display: flex;
+      flex-direction: row;
+
+      .link-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        padding: 0.75rem 0 0.75rem 0;
+        font-size: 1.25rem;
+        color: white;
+        border: none;
+        transition: 0.25s background-color ease-in-out;
+        cursor: pointer;
+
+        .fa {
+          padding-left: 0.35rem;
+        }
+      }
+
+      .button-github {
+        background-color: #333;
+        margin-right: 1rem;
+
+        &:hover {
+          background-color: #464646;
+        }
+      }
+
+      .button-website {
+        background-color: $theme-color;
+
+        &:hover {
+          background-color: $theme-light;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-container {
+    width: 100%;
+  }
+}

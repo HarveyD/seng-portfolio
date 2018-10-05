@@ -4,17 +4,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 .45rem 1.45rem .45rem;
-  transition: .25s color ease-in-out;
+  margin: 0 0.45rem 1.45rem 0.45rem;
+  transition: 0.25s color ease-in-out;
 
   .icon {
-    font-size: 6.25rem;
-    margin-bottom: 0.75rem;
+    font-size: 5.25rem;
   }
 
   .name {
     font-weight: bold;
     font-size: 1.1rem;
+  }
+
+  &.small {
+    margin-bottom: .25rem; 
+
+    .icon {
+      font-size: 3.75rem;
+      margin-bottom: 0.35rem;
+    }
+  }
+
+  &.large {
+    .icon {
+      font-size: 6.25rem;
+      margin-bottom: 0.75rem;
+    }
   }
 
   &:hover {

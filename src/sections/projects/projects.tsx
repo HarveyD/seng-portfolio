@@ -2,110 +2,171 @@ import * as React from "react";
 
 import "./projects.css";
 import Project, { IProject } from "../../components/project/project";
+import ProjectModal from "../../components/project-modal/project-modal";
+import { SkillEnum } from "../../constants";
+
+interface IState {
+  selectedProject?: IProject;
+}
 
 const projectList: IProject[] = [
   {
+    id: 0,
     name: "Crypto Coaster",
-    description:
-      "A simple web app that provides real time updates to cryptocurrency prices using their respective mascots.",
+    description:{
+      overview: "A simple web app that provides real time updates to cryptocurrency prices using their respective mascots.",
+      detailed: "A simple web app that provides real time updates to cryptocurrency prices using their respective mascots.A simple web app that provides real time updates to cryptocurrency prices using their respective mascots."
+    },
     img: "crypto-coaster.jpg",
-    tagList: ["JavaScript", "Web Sockets", "JQuery"],
+    tagList: [SkillEnum.js, SkillEnum.websockets, SkillEnum.jquery],
     url: {
-      github: 'https://github.com/HarveyD/crypto-coaster',
-      website: 'https://www.harveydelaney.com/crypto-coaster/'
+      github: "https://github.com/HarveyD/crypto-coaster",
+      website: "https://www.harveydelaney.com/crypto-coaster/"
     }
   },
   {
-    name: "Reddit Sentitment Analyser",
-    description:
-      "Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread.",
+    id: 1,
+    name: "Reddit Sentiment Analyser",
+    description: {
+      overview: "Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread.",
+      detailed: "Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread.",
+    },
     img: "reddit-sa.jpg",
-    tagList: ["JavaScript", "Sass", "JQuery", "Browserify", "NodeJS"],
+    tagList: [SkillEnum.js, SkillEnum.sass, SkillEnum.jquery, SkillEnum.node],
     url: {
-      github: 'https://github.com/HarveyD/reddit-sa',
-      website: 'https://www.harveydelaney.com/reddit-sa/'
+      github: "https://github.com/HarveyD/reddit-sa",
+      website: "https://www.harveydelaney.com/reddit-sa/"
     }
   },
   {
+    id: 2,
     name: "Compounding Savings",
-    description:
-      "A web application aimed at informing the potential compounding interest benefits from not buying non-essential items.",
+    description: {
+      overview: "A web application aimed at informing the potential compounding interest benefits from not buying non-essential items.",
+      detailed: "A web application aimed at informing the potential compounding interest benefits from not buying non-essential items. A web application aimed at informing the potential compounding interest benefits from not buying non-essential items."
+    },
     img: "compounding-savings.jpg",
-    tagList: ["React", "Redux", "Sass", "Webpack"],
+    tagList: [SkillEnum.react, SkillEnum.redux, SkillEnum.sass, SkillEnum.webpack],
     url: {
-      github: 'https://github.com/HarveyD/compounding-savings/',
-      website: 'https://www.harveydelaney.com/compounding-savings'
+      github: "https://github.com/HarveyD/compounding-savings/",
+      website: "https://www.harveydelaney.com/compounding-savings"
     }
   },
   {
+    id: 3,
     name: "PooPlot",
-    description:
-      "A hybrid mobile application to help people track, view and share poops.",
+    description: {
+      overview: "A hybrid mobile application to help people track, view and share poops.",
+      detailed: "A hybrid mobile application to help people track, view and share poops. A hybrid mobile application to help people track, view and share poops."
+    },
     img: "pooplot.jpg",
-    tagList: ["Angular 4", "Ionic", "Android", "NodeJS", "MongoDB"],
+    tagList: [SkillEnum.angular2, SkillEnum.ionic, SkillEnum.android, SkillEnum.node, SkillEnum.mongodb],
     url: {
-      github: '',
-      website: 'https://www.harveydelaney.com/pooplot'
+      github: "",
+      website: "https://www.harveydelaney.com/pooplot"
     }
   },
   {
+    id: 4,
     name: "Bruce Hall VR",
-    description:
-      "A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE.",
+    description: {
+      overview: "A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE.",
+      detailed: "A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE. A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE."
+    }, 
     img: "bruce-hall-vr.jpg",
-    tagList: ["JavaScript", "JQuery", "Panelleum"],
+    tagList: [SkillEnum.js, SkillEnum.jquery, SkillEnum.panelleum],
     url: {
-      github: 'https://github.com/HarveyD/bruce-hall-vr',
-      website: 'https://www.harveydelaney.com/bruce-hall-vr'
+      github: "https://github.com/HarveyD/bruce-hall-vr",
+      website: "https://www.harveydelaney.com/bruce-hall-vr"
     }
   },
   {
+    id: 5,
     name: "Bruce Hall VR 2",
-    description:
-      "A rebuild of the Bruce Hall VR project written in React. NOT LIVE.",
+    description: {
+      overview: "A rebuild of the Bruce Hall VR project written in React. NOT LIVE.",
+      detailed: "A rebuild of the Bruce Hall VR project written in React. NOT LIVE. A rebuild of the Bruce Hall VR project written in React. NOT LIVE."
+    },
     img: "bruce-hall-vr-2.jpg",
-    tagList: ["React", "Panelleum"],
+    tagList: [SkillEnum.react, SkillEnum.panelleum],
     url: {
-      github: 'https://github.com/HarveyD/bruce-hall-vr-2',
-      website: ''
+      github: "https://github.com/HarveyD/bruce-hall-vr-2",
+      website: ""
     }
   },
   {
+    id: 6,
     name: "Repeat After Me",
-    description:
-      "A simple Simon Says clone made using HTML5 Canvas + Typescript.",
+    description: {
+      overview: "A simple Simon Says clone made using HTML5 Canvas + Typescript.",
+      detailed: "A simple Simon Says clone made using HTML5 Canvas + Typescript. A simple Simon Says clone made using HTML5 Canvas + Typescript.",
+    },
     img: "repeat-after-me.jpg",
-    tagList: ["JavaScript", "TypeScript", "Webpack", "HTML5 Canvas"],
+    tagList: [SkillEnum.js, SkillEnum.ts, SkillEnum.webpack, SkillEnum.html5],
     url: {
-      github: 'https://github.com/HarveyD/repeatafterme',
-      website: 'https://www.harveydelaney.com/repeatafterme/'
+      github: "https://github.com/HarveyD/repeatafterme",
+      website: "https://www.harveydelaney.com/repeatafterme/"
     }
   },
   {
+    id: 7,
     name: "SpookEm",
-    description:
-      "A tile based horror/survival game made using Processing/Java. (Demo not available).",
+    description: {
+      overview: "A tile based horror/survival game made using Processing/Java. (Demo not available).",
+      detailed: "A tile based horror/survival game made using Processing/Java. (Demo not available). A tile based horror/survival game made using Processing/Java. (Demo not available)."
+    },
     img: "spookem.jpg",
-    tagList: ["Java", "Processing", "Path finding algorithms"],
+    tagList: [SkillEnum.java, SkillEnum.processing],
     url: {
-      github: '',
-      website: ''
+      github: "",
+      website: ""
     }
-  }  
+  }
 ];
 
-const Projects: React.StatelessComponent = () => {
-  return (
-    <div className="section section-secondary">
-      <h2>Projects</h2>
+class Projects extends React.Component<any, IState> {
+  constructor(props: any) {
+    super(props);
 
-      <div className="projects-container">
-        {projectList.map((project, i) => (
-          <Project key={i} projectDetails={project} />
-        ))}
+    this.state = { selectedProject: undefined };
+  }
+
+  public handleProjectClick = (projectId: number) => {
+    this.setState({
+      selectedProject: projectList.find(x => x.id === projectId)
+    });
+  };
+
+  public handleModalExit = () => {
+    this.setState({ selectedProject: undefined });
+  };
+
+  public render() {
+    const { selectedProject } = this.state;
+
+    return (
+      <div className="section section-secondary">
+        <h2>Projects</h2>
+
+        <div className="projects-container">
+          {projectList.map(project => (
+            <Project
+              key={project.id}
+              projectDetails={project}
+              projectClick={this.handleProjectClick}
+            />
+          ))}
+        </div>
+
+        {selectedProject && (
+          <ProjectModal
+            project={selectedProject}
+            modalExitEvent={this.handleModalExit}
+          />
+        )}
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Projects;

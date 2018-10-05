@@ -1,43 +1,42 @@
 import * as React from "react";
 
 import "./project.css";
+import { SkillEnum } from "../../constants";
 
 interface IProps {
   projectDetails: IProject;
+  projectClick: (projectId: number) => void;
 }
 
 export interface IProject {
+  id: number;
   name: string;
-  description: string;
+  description: {
+    overview: string;
+    detailed: string;
+  };
   img: string;
-  tagList: string[];
+  tagList: SkillEnum[];
   url: {
     github: string;
     website: string;
   };
 }
 
-const handleProjectClick = (website: string) => {
-  if (!website) {
-    return;
-  }
-
-  window.open(website, "_blank");
-};
-
 const Project: React.StatelessComponent<IProps> = props => {
   const {
     projectDetails: {
+      id,
       name,
-      description,
-      img,
-      url: { website }
-    }
+      description: { overview },
+      img
+    },
+    projectClick
   } = props;
 
   return (
     <div
-      onClick={() => handleProjectClick(website)}
+      onClick={() => projectClick(id)}
       className="project-container"
     >
       <div className="heading">
@@ -48,7 +47,7 @@ const Project: React.StatelessComponent<IProps> = props => {
       </div>
       <div className="body">
         <div className="overlay">
-          <div className="description-container">{description}</div>
+          <div className="description-container">{overview}</div>
         </div>
 
         <img
