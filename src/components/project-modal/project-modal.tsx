@@ -30,42 +30,52 @@ const renderButtons = (url: any) => (
   </div>
 );
 
-const ProjectModal: React.StatelessComponent<IProps> = props => {
-  const {
-    project: {
-      img,
-      name,
-      description: { detailed },
-      tagList,
-      url
-    },
-    modalExitEvent
-  } = props;
+class ProjectModal extends React.Component<IProps> {
+  public componentDidMount() {
+    document.body.classList.add('disable-scroll');
+  }
 
-  return (
-    <div className="project-modal-container" onClick={modalExitEvent}>
-      <div className="modal-content-container" onClick={contentClickEvent}>
-        <img
-          className="project-image"
-          src={require(`../../assets/images/projects/${img}`)}
-        />
+  public componentWillUnmount() {
+    document.body.classList.remove('disable-scroll');
+  }
 
-        <div className="modal-body-container">
-          <div className="header-container">
-            <h2 className="modal-heading">{name}</h2>
-            <i className="fa fa-times close-icon" onClick={modalExitEvent} />
+  public render() {
+    const {
+      project: {
+        img,
+        name,
+        description: { detailed },
+        tagList,
+        url
+      },
+      modalExitEvent
+    } = this.props;
+  
+    return (
+      <div className="project-modal-container" onClick={modalExitEvent}>
+        <div className="modal-content-container" onClick={contentClickEvent}>
+          <img
+            className="project-image"
+            src={require(`../../assets/images/projects/${img}`)}
+          />
+  
+          <div className="modal-body-container">
+            <div className="header-container">
+              <h2 className="modal-heading">{name}</h2>
+              <i className="fa fa-times close-icon" onClick={modalExitEvent} />
+            </div>
+  
+            <p className="created-date">12th September 2018</p>
+            <p>{detailed}</p>
+  
+            <div className="technologies-container">{renderTechnologies(tagList)}</div>
+  
+            {renderButtons(url)}
           </div>
-
-          <p className="created-date">12th September 2018</p>
-          <p>{detailed}</p>
-
-          <div className="skills-container">{renderTechnologies(tagList)}</div>
-
-          {renderButtons(url)}
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default ProjectModal;

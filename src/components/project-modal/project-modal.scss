@@ -16,6 +16,8 @@
   cursor: pointer;
 
   .modal-content-container {
+    display: flex;
+    flex-direction: column;
     background-color: $background-secondary;
     max-width: 37.5%;
     max-height: 95%;
@@ -24,6 +26,10 @@
     cursor: default;
 
     .modal-body-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex: 1;
       padding: 0.25rem 1.05rem 1.05rem 1.05rem;
 
       .header-container {
@@ -54,7 +60,7 @@
       font-size: 0.9rem;
     }
 
-    .skills-container {
+    .technologies-container {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
@@ -103,7 +109,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .project-container {
-    width: 100%;
+  .project-modal-container {
+    .modal-content-container {
+      max-width: 100%;
+      width: 100%;
+      max-height: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
   }
 }
