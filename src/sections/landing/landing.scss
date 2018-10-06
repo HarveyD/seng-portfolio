@@ -1,62 +1,109 @@
+@import "../../variables.scss";
+
 .landing-container {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+
+  background: url("../../assets/images/landing.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  .landing-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 100vh;
-    justify-content: space-between;
+    width: 100vw;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    color: white;
+    z-index: 20;
+  }
 
-    background: url('../../assets/images/landing.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    
-    .landing-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 100vh;
-        width: 100vw;
-        z-index: 10;
-        background-color: rgba(0, 0, 0, 0.5);
+  .heading-content {
+    .heading-name,
+    .heading-title {
+      transition: all 1s ease-in-out;
+    }
+  }
+
+  .link-container {
+    flex-direction: row;
+    background-color: white;
+    border-radius: 0.25rem;
+    padding: 1.3rem 1.25rem 1.3rem 1.25rem;
+    color: $theme-color;
+    font-size: 1.15rem;
+    transition: all 1s ease-in-out;
+
+    .heading-link {
+      cursor: pointer;
+
+      &:not(:last-child) {
+        padding-right: 0.75rem;
+      }
+
+      &:hover {
+        color: $theme-dark;
+      }
+    }
+  }
+
+  .footer {
+    cursor: pointer;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 1s ease-in-out;
+
+    .find-out {
+      padding-bottom: 0.5rem;
     }
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-        z-index: 20;
+    .fa-chevron-down {
+      font-size: 1.5rem;
+
+      animation: pulse-infinite 3.5s infinite;
     }
+  }
 
-    .heading {
-        flex-direction: row;
-        background-color: white;
-        border-radius: 0.25rem;
-        padding: 1.3rem 1.25rem 1.3rem 1.25rem;
-        color: grey;
-        font-size: 1.15rem;
+  .hide-down {
+    transform: translateY(264px);
+    opacity: 0;
+  }
 
-        .heading-link:not(:last-child) {
-            padding-right: 0.75rem;
-        }
-    }
+  .hide-up {
+    transform: translateY(-264px);
+    opacity: 0;
+  }
 
-    .footer {
-        cursor: pointer;
-        padding: 1.5rem;
-        font-size: 1.1rem;
-        font-weight: bold;
-
-        .find-out {
-            padding-bottom: 0.5rem;
-        }
-
-        .fa-chevron-down {
-            font-size: 1.5rem;
-        }
-    }
+  .show {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
-
+// Todo: add vendor prefixes Sass
+@keyframes pulse-infinite {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
