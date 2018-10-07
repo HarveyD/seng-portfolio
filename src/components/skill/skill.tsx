@@ -12,6 +12,7 @@ export interface ISkill {
   name: string;
   icon: string;
   showAsDefault?: boolean;
+  faIcon?: string;
 }
 
 export const skillMap: Map<SkillEnum, ISkill>  = new Map<SkillEnum, ISkill> ([
@@ -22,7 +23,7 @@ export const skillMap: Map<SkillEnum, ISkill>  = new Map<SkillEnum, ISkill> ([
   [SkillEnum.ts, { name: "TypeScript", icon: "typescript" }],
   [SkillEnum.jquery, { name: "JQuery", icon: "jquery" }],
   [SkillEnum.react, { name: "React", icon: "react" }],
-  [SkillEnum.redux, { name: "Redux", icon: "redux" }],
+  [SkillEnum.redux, { name: "Redux", icon: "", faIcon: "code" }],
   [SkillEnum.angular2, { name: "Angular 2+", icon: "angularjs" }],
   [SkillEnum.jasmine, { name: "Jasmine", icon: "jasmine" }],
   [SkillEnum.webpack, { name: "Webpack", icon: "webpack" }],
@@ -37,10 +38,10 @@ export const skillMap: Map<SkillEnum, ISkill>  = new Map<SkillEnum, ISkill> ([
   [SkillEnum.nginx, { name: "Nginx", icon: "nginx" }],
   [SkillEnum.vs, { name: "Visual Studio", icon: "visualstudio" }],
   [SkillEnum.android, { name: "Android", icon: "android", showAsDefault: false }],
-  [SkillEnum.ionic, { name: "Ionic", icon: "ionic", showAsDefault: false }],
-  [SkillEnum.websockets, { name: "Websockets", icon: "websocket", showAsDefault: false }],
-  [SkillEnum.panelleum, { name: "Panelleum", icon: "panelleum", showAsDefault: false }],
-  [SkillEnum.processing, { name: "Processing", icon: "processing", showAsDefault: false }],
+  [SkillEnum.ionic, { name: "Ionic", icon: "ionic", faIcon: "code", showAsDefault: false }],
+  [SkillEnum.websockets, { name: "Websockets", icon: "", faIcon: "plug", showAsDefault: false }],
+  [SkillEnum.panelleum, { name: "Panelleum", icon: "", faIcon: "columns", showAsDefault: false }],
+  [SkillEnum.processing, { name: "Processing", icon: "", faIcon: "code", showAsDefault: false }],
 ]);
 
 const Skill: React.StatelessComponent<IProps> = props => {
@@ -52,10 +53,12 @@ const Skill: React.StatelessComponent<IProps> = props => {
     return null;
   }
 
+  const { name, icon, faIcon } = skillDetails;
+
   return (
     <div className={`skill-container ${size}`}>
-      <i className={`icon devicon-${skillDetails.icon}-plain`} />
-      <span className="name">{skillDetails.name}</span>
+      <i className={'icon' + faIcon ? `fa fa-${faIcon}` : `devicon-${icon}-plain`} />
+      <span className="name">{name}</span>
     </div>
   );
 };
