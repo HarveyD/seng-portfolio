@@ -58,7 +58,7 @@ class Landing extends React.Component<any, IState> {
 
         <div className={`container link-container ${linkNav && linkNav.currentClass}`}>{this.renderHeading()}</div>
 
-        <div className="container heading-content">
+        <div className="container container-heading">
           <h1
             className={`heading-name ${name && name.currentClass}`}
           >
@@ -71,7 +71,7 @@ class Landing extends React.Component<any, IState> {
           </h2>
         </div>
 
-        <div className={`container footer ${findOutMore && findOutMore.currentClass}`}>
+        <div className={`container container-footer ${findOutMore && findOutMore.currentClass}`}>
           <span className="find-out">Find out more about {user.firstName}</span>
           <i className="fa fa-chevron-down" />
         </div>

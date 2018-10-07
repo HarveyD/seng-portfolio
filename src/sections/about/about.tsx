@@ -23,7 +23,7 @@ const renderAboutText = () => (
 
 const About: React.StatelessComponent = () => {
   return (
-    <div className="section section-primary about">
+    <div className="section section-primary section-about">
       <h2>About Harvey</h2>
       <div className="content-container about-container">
         <img className="portrait" src={Portait} />

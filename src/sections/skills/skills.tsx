@@ -11,7 +11,7 @@ const getAllSkills = Array
 
 const Skills: React.StatelessComponent = () => {
   return (
-    <div className="section primary">
+    <div className="section section-primary">
       <h2>Skills</h2>
 
       <div className="skills-container">

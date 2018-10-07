@@ -11,6 +11,7 @@
   background: url("../../assets/images/landing.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-position-x: 75%;
 
   .landing-overlay {
     position: absolute;
@@ -32,10 +33,12 @@
     z-index: 20;
   }
 
-  .heading-content {
+  .container-heading {
     .heading-name,
     .heading-title {
-      transition: all 1s ease-in-out;
+      text-align: center;
+      transition: opacity 1s ease-in-out;
+      transition: transform 1s ease-in-out;
     }
   }
 
@@ -46,7 +49,8 @@
     padding: 1.3rem 1.25rem 1.3rem 1.25rem;
     color: $theme-color;
     font-size: 1.15rem;
-    transition: all 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    transition: transform 1s ease-in-out;
 
     .heading-link {
       cursor: pointer;
@@ -61,12 +65,13 @@
     }
   }
 
-  .footer {
+  .container-footer {
     cursor: pointer;
     padding: 1.5rem;
     font-size: 1.1rem;
     font-weight: bold;
-    transition: all 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    transition: transform 1s ease-in-out;
 
     .find-out {
       padding-bottom: 0.5rem;
@@ -92,6 +97,18 @@
   .show {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .landing-container {
+    .heading-content {
+      .heading-name,
+      .heading-title {
+        margin: 0 1.5rem 0 1.5rem;
+      }
+    }
   }
 }
 
