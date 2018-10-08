@@ -57,7 +57,7 @@ const Skill: React.StatelessComponent<IProps> = props => {
 
   return (
     <div className={`skill-container ${size}`}>
-      <i className={'icon' + faIcon ? `fa fa-${faIcon}` : `devicon-${icon}-plain`} />
+      <i className={'icon ' + (faIcon ? `fa fa-${faIcon}` : `devicon-${icon}-plain`)} />
       <span className="name">{name}</span>
     </div>
   );
