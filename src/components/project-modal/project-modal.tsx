@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import "./project-modal.css";
-import { IProject } from "../project/project";
+import { IProject, IUrl } from "../project/project";
 import Skill from "../skill/skill";
 import { SkillEnum } from "../../constants";
 
@@ -17,16 +17,16 @@ const contentClickEvent = (e: any) => {
 const renderTechnologies = (skillList: SkillEnum[]) =>
   skillList.map((skill, i) => <Skill key={i} skill={skill} size="small" />);
 
-const renderButtons = (url: any) => (
+const renderButtons = (url: IUrl) => (
   <div className="button-links">
-    <button onClick={() => window.open(url.github)} className="link-button button-github">
+    { url.github && <button onClick={() => window.open(url.github)} className="link-button button-github">
       Github
       <i className="fa fa-github" />
-    </button>
-    <button onClick={() => window.open(url.website)} className="link-button button-website">
+    </button> }
+    { url.website && <button onClick={() => window.open(url.website)} className="link-button button-website">
       Website
       <i className="fa fa-link" />
-    </button>
+    </button> }
   </div>
 );
 

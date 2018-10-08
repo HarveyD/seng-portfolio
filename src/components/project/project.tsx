@@ -8,6 +8,11 @@ interface IProps {
   projectClick: (projectId: number) => void;
 }
 
+export interface IUrl {
+  github?: string;
+  website?: string;
+}
+
 export interface IProject {
   id: number;
   name: string;
@@ -17,10 +22,7 @@ export interface IProject {
   };
   img: string;
   tagList: SkillEnum[];
-  url: {
-    github: string;
-    website: string;
-  };
+  url: IUrl;
 }
 
 const Project: React.StatelessComponent<IProps> = props => {

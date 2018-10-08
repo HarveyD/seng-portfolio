@@ -118,7 +118,7 @@ const projectList: IProject[] = [
     img: "spookem.jpg",
     tagList: [SkillEnum.java, SkillEnum.processing],
     url: {
-      github: "",
+      github: "https://github.com/HarveyD/SpookEm",
       website: ""
     }
   }
