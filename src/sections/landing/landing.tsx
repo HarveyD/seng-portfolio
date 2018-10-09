@@ -15,11 +15,15 @@ interface IState {
   linkNav?: IAnimated;
 }
 
-const user = {
-  firstName: "Harvey",
-  lastName: "Delaney",
-  title: "Software Engineer"
-};
+interface IProps {
+  userDetails: IUserDetails;
+}
+
+export interface IUserDetails {
+  firstName: string;
+  lastName: string;
+  title: string;
+}
 
 const headingList: string[] = [
   "About",
@@ -29,7 +33,7 @@ const headingList: string[] = [
   "Contact"
 ];
 
-class Landing extends React.Component<any, IState> {
+class Landing extends React.Component<IProps, IState> {
   constructor(props: any) {
     super(props);
 
@@ -50,6 +54,8 @@ class Landing extends React.Component<any, IState> {
   }
 
   public render() {
+    const { userDetails } = this.props;
+
     const  { name, title, findOutMore, linkNav } = this.state;
 
     return (
@@ -62,17 +68,17 @@ class Landing extends React.Component<any, IState> {
           <h1
             className={`heading-name ${name && name.currentClass}`}
           >
-            {user.firstName} {user.lastName}
+            {userDetails.firstName} {userDetails.lastName}
           </h1>
           <h2
             className={`heading-title ${title && title.currentClass}`}
           >
-            {user.title}
+            {userDetails.title}
           </h2>
         </div>
 
         <div className={`container container-footer ${findOutMore && findOutMore.currentClass}`}>
-          <span className="find-out">Find out more about {user.firstName}</span>
+          <span className="find-out">Find out more about {userDetails.firstName}</span>
           <i className="fa fa-chevron-down" />
         </div>
       </div>

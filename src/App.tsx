@@ -9,12 +9,13 @@ import Projects from './sections/projects/projects';
 import Skills from './sections/skills/skills';
 import Contact from './sections/contact/contact';
 import Footer from './sections/footer/footer';
+import PortfolioDataService from './services/portfolio-data.service';
 
 class App extends React.Component {
   public render() {
     return (
       <div className="app-container">
-        <Landing />
+        <Landing userDetails={PortfolioDataService.user}/>
         <About />
         <Experience />
         <Education />
