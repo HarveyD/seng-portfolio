@@ -28,9 +28,8 @@
     .modal-body-container {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
       flex: 1;
-      padding: 0.25rem 1.05rem 1.05rem 1.05rem;
+      padding: 0.85rem 1.05rem 1.05rem 1.05rem;
 
       .header-container {
         display: flex;
@@ -57,7 +56,7 @@
 
     .created-date {
       font-weight: bold;
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
 
     .technologies-container {
@@ -70,6 +69,7 @@
     .button-links {
       display: flex;
       flex-direction: row;
+      margin-top: auto;
 
       .link-button {
         display: flex;

@@ -22,3 +22,13 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .section-about {
+    .about-container {
+      .about-text {
+        margin: 1.25rem 1.25rem 0 1.25rem;
+      }
+    }
+  }
+}

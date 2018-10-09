@@ -14,10 +14,11 @@
   .name {
     font-weight: bold;
     font-size: 1.1rem;
+    text-align: center;
   }
 
   &.small {
-    margin-bottom: .25rem; 
+    margin-bottom: 0.25rem;
 
     .icon {
       font-size: 3.75rem;
@@ -34,7 +35,25 @@
 
   &:hover {
     color: $theme-color;
-    animation: wobble .5s 1;
+    animation: wobble 0.5s 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skill-container {
+    &.small {
+      .icon {
+        font-size: 2.25rem;
+      }
+    }
+
+    &.large {
+      width: 22.5%;
+
+      .icon {
+        font-size: 3.75rem;
+      }
+    }
   }
 }
 
@@ -59,4 +78,3 @@
     transform: rotate(3deg);
   }
 }
-

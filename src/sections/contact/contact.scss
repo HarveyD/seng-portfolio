@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     border-bottom: 1px solid white;
+    padding-bottom: 2.25rem;
   }
 
   .form-container {
@@ -73,6 +74,10 @@
 @media only screen and (max-width: 768px) {
   .contact-container {
     width: 100%;
+
+    .social-container {
+      justify-content: space-evenly;
+    }
 
     .form-container {
       text-align: center;

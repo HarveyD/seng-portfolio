@@ -12,8 +12,8 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.11);
-    width: 124px;
-    height: 124px;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.35s ease-in-out;
@@ -51,6 +51,22 @@
   &.bl:hover {
     .icon-container {
       background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .social-item-container {
+    width: 42.5%;
+    align-items: center;
+
+    .icon-container {
+      width: 7rem;
+      height: 7rem;
+
+      .icon {
+        font-size: 3.5rem;
+      }
     }
   }
 }

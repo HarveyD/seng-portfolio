@@ -32,7 +32,7 @@ export const skillMap: Map<SkillEnum, ISkill>  = new Map<SkillEnum, ISkill> ([
   [SkillEnum.node, { name: "Node", icon: "nodejs" }],
   [SkillEnum.csharp, { name: "C#", icon: "csharp" }],
   [SkillEnum.java, { name: "Java", icon: "java" }],
-  [SkillEnum.mongodb, { name: "MongoDB", icon: "mongodb" }],
+  [SkillEnum.mongodb, { name: "Mongo DB", icon: "mongodb" }],
   [SkillEnum.postgresql, { name: "PostgreSQL", icon: "postgresql" }],
   [SkillEnum.git, { name: "Git", icon: "git" }],
   [SkillEnum.nginx, { name: "Nginx", icon: "nginx" }],
