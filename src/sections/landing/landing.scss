@@ -37,8 +37,7 @@
     .heading-name,
     .heading-title {
       text-align: center;
-      transition: opacity 1s ease-in-out;
-      transition: transform 1s ease-in-out;
+      transition: opacity 1s ease-in-out, transform 1s ease-in-out;
     }
   }
 
@@ -49,8 +48,7 @@
     padding: 1.3rem 1.25rem 1.3rem 1.25rem;
     color: $theme-color;
     font-size: 1.15rem;
-    transition: opacity 1s ease-in-out;
-    transition: transform 1s ease-in-out;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 
     .heading-link {
       cursor: pointer;
@@ -70,8 +68,7 @@
     padding: 1.5rem;
     font-size: 1.1rem;
     font-weight: bold;
-    transition: opacity 1s ease-in-out;
-    transition: transform 1s ease-in-out;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 
     .find-out {
       padding-bottom: 0.5rem;
