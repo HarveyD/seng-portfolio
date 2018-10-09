@@ -34,5 +34,29 @@
 
   &:hover {
     color: $theme-color;
+    animation: wobble .5s 1;
   }
 }
+
+@keyframes wobble {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-3deg);
+  }
+
+  60% {
+    transform: rotate(3deg);
+  }
+
+  80% {
+    transform: rotate(-3deg);
+  }
+
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
