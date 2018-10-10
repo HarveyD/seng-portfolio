@@ -15,11 +15,11 @@ export interface ISocialIcon {
 
 const SocialIcon: React.StatelessComponent<IProps> = props => {
   const {
-    social: { id, name, icon }
+    social: { id, name, icon, url }
   } = props;
 
   return (
-    <div className={`social-item-container ${id}`}>
+    <div className={`social-item-container ${id}`} onClick={() => window.open(url)}>
       <div className="icon-container">
         <i className={`icon fa ${icon}`} />
       </div>
