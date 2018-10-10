@@ -5,8 +5,8 @@ import Portait from "src/assets/images/portrait.jpg";
 
 const renderAboutText = (aboutTextList: string[]) => (
   <div className="about-text">
-    {aboutTextList.map(textSection => (
-      <p>{textSection}</p>
+    {aboutTextList.map((textSection, i) => (
+      <p key={i}>{textSection}</p>
     ))}
   </div>
 );
