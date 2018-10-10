@@ -46,7 +46,8 @@ class ProjectModal extends React.Component<IProps> {
         name,
         description: { detailed },
         tagList,
-        url
+        url,
+        releaseDate
       },
       modalExitEvent
     } = this.props;
@@ -65,7 +66,7 @@ class ProjectModal extends React.Component<IProps> {
               <i className="fa fa-times close-icon" onClick={modalExitEvent} />
             </div>
   
-            <p className="created-date">12th September 2018</p>
+            <p className="released-date">{releaseDate}</p>
             <p>{detailed}</p>
   
             <div className="technologies-container">{renderTechnologies(tagList)}</div>

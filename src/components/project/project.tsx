@@ -23,6 +23,7 @@ export interface IProject {
   img: string;
   tagList: SkillEnum[];
   url: IUrl;
+  releaseDate: string;
 }
 
 const Project: React.StatelessComponent<IProps> = props => {

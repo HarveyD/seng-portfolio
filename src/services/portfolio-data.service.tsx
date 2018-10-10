@@ -112,7 +112,8 @@ export default class PortfolioDataService {
 			url: {
 				github: "https://github.com/HarveyD/crypto-coaster",
 				website: "https://www.harveydelaney.com/crypto-coaster/"
-			}
+			},
+			releaseDate: "16th Oct 2017"
 		},
 		{
 			id: 1,
@@ -126,7 +127,8 @@ export default class PortfolioDataService {
 			url: {
 				github: "https://github.com/HarveyD/reddit-sa",
 				website: "https://www.harveydelaney.com/reddit-sa/"
-			}
+			},
+			releaseDate: "1st April 2018"
 		},
 		{
 			id: 2,
@@ -140,7 +142,8 @@ export default class PortfolioDataService {
 			url: {
 				github: "https://github.com/HarveyD/compounding-savings/",
 				website: "https://www.harveydelaney.com/compounding-savings"
-			}
+			},
+			releaseDate: "20th May 2017"
 		},
 		{
 			id: 3,
@@ -154,7 +157,8 @@ export default class PortfolioDataService {
 			url: {
 				github: "",
 				website: "https://www.harveydelaney.com/pooplot"
-			}
+			},
+			releaseDate: "6th August 2017"
 		},
 		{
 			id: 4,
@@ -168,7 +172,8 @@ export default class PortfolioDataService {
 			url: {
 				github: "https://github.com/HarveyD/bruce-hall-vr",
 				website: "https://www.harveydelaney.com/bruce-hall-vr"
-			}
+			},
+			releaseDate: "17th September 2017"
 		},
 		{
 			id: 5,
@@ -182,7 +187,8 @@ export default class PortfolioDataService {
 			url: {
 				github: "https://github.com/HarveyD/bruce-hall-vr-2",
 				website: ""
-			}
+			},
+			releaseDate: "N/A"
 		},
 		{
 			id: 6,
@@ -196,7 +202,8 @@ export default class PortfolioDataService {
 			url: {
 				github: "https://github.com/HarveyD/repeatafterme",
 				website: "https://www.harveydelaney.com/repeatafterme/"
-			}
+			},
+			releaseDate: "23rd July 2017"
 		},
 		{
 			id: 7,
@@ -210,7 +217,8 @@ export default class PortfolioDataService {
 			url: {
 				github: "https://github.com/HarveyD/SpookEm",
 				website: ""
-			}
+			},
+			releaseDate: "24th October 2016"
 		}
 	];
 
