@@ -37,6 +37,12 @@
         justify-content: space-between;
         margin: 0 0 0.5rem 0;
 
+        h2 {
+          &:after {
+            border-bottom: none;
+          }
+        }
+
         .modal-heading {
           font-size: 1.75rem;
           margin: 0;
@@ -108,7 +114,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $size-small) {
   .project-modal-container {
     .modal-content-container {
       max-width: 100%;

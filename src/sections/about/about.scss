@@ -23,7 +23,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $size-small) {
   .section-about {
     .about-container {
       .about-text {

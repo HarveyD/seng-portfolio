@@ -12,7 +12,6 @@ interface IState {
   name?: IAnimated;
   title?: IAnimated;
   findOutMore?: IAnimated;
-  linkNav?: IAnimated;
 }
 
 interface IProps {
@@ -25,14 +24,6 @@ export interface IUserDetails {
   title: string;
 }
 
-const headingList: string[] = [
-  "About",
-  "Experience",
-  "Projects",
-  "Skills",
-  "Contact"
-];
-
 class Landing extends React.Component<IProps, IState> {
   constructor(props: any) {
     super(props);
@@ -40,8 +31,7 @@ class Landing extends React.Component<IProps, IState> {
     this.state = {
       name: { currentClass: "hide-down", animationClass: "show", delay: 150 },
       title: { currentClass: "hide-down", animationClass: "show", delay: 450 },
-      findOutMore: { currentClass: "hide-down", animationClass: "show", delay: 600 },
-      linkNav: { currentClass: "hide-up", animationClass: "show", delay: 600 }
+      findOutMore: { currentClass: "hide-down", animationClass: "show", delay: 600 }
     };
   }
 
@@ -55,14 +45,11 @@ class Landing extends React.Component<IProps, IState> {
 
   public render() {
     const { userDetails } = this.props;
-
-    const  { name, title, findOutMore, linkNav } = this.state;
+    const  { name, title, findOutMore } = this.state;
 
     return (
       <div className="landing-container">
         <div className="landing-overlay" />
-
-        <div className={`container link-container ${linkNav && linkNav.currentClass}`}>{this.renderHeading()}</div>
 
         <div className="container container-heading">
           <h1
@@ -84,14 +71,6 @@ class Landing extends React.Component<IProps, IState> {
       </div>
     );
   }
-
-  private renderHeading = () => {
-    return headingList.map((heading, i) => (
-      <a className="heading-link" key={i}>
-        {heading}
-      </a>
-    ));
-  };
 
   private animateWithDelay(key: string, animateObj: IAnimated) {
     setTimeout(() => {

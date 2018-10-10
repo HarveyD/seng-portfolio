@@ -13,9 +13,10 @@
 
   &:before {
     content: "";
-    border: 1px solid $theme-color;
+    width: 0.2rem;
+    background-color: $theme-color;
     position: absolute;
-    left: 3.65rem;
+    left: 7.5%;
     z-index: 1;
     height: 100%;
   }
@@ -27,7 +28,7 @@
       width: 64px;
       height: 64px;
       border-radius: 50%;
-      border: 2px solid $theme-color;
+      border: 0.2rem solid $theme-color;
       z-index: 2;
     }
   }
@@ -42,7 +43,7 @@
 
   &.last-card {
     &:before {
-      border: none;
+      display: none;
     }
 
     .details-container {
@@ -51,24 +52,24 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $size-small) {
   .info-card-container {
-      width: 100%;
-      flex-direction: column;
-      padding: 1.75rem 1.65rem 0 1.65rem;
+    width: 100%;
+    flex-direction: column;
+    padding: 1.75rem 1.65rem 0 1.65rem;
 
-      &:before {
-        border: none;
-      }
+    &:before {
+      display: none;
+    }
 
-      .logo-container {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 16px;
-      }
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
 
-      .details-container {
-        padding: 0 0 1.5rem 0;
-      }
+    .details-container {
+      padding: 0 0 1.5rem 0;
+    }
   }
 }

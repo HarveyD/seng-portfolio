@@ -5,7 +5,7 @@
   flex: 1;
   flex-direction: column;
   height: 100vh;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   background: url("../../assets/images/landing.jpg");
@@ -34,6 +34,15 @@
   }
 
   .container-heading {
+    .heading-name {
+      font-size: 6.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .heading-title {
+      font-size: 3.15rem;
+    }
+
     .heading-name,
     .heading-title {
       text-align: center;
@@ -41,32 +50,12 @@
     }
   }
 
-  .link-container {
-    flex-direction: row;
-    background-color: white;
-    border-radius: 0.25rem;
-    padding: 1.3rem 1.25rem 1.3rem 1.25rem;
-    color: $theme-color;
-    font-size: 1.15rem;
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-
-    .heading-link {
-      cursor: pointer;
-
-      &:not(:last-child) {
-        padding-right: 0.75rem;
-      }
-
-      &:hover {
-        color: $theme-dark;
-      }
-    }
-  }
-
   .container-footer {
+    position: absolute;
+    bottom: 0;
     cursor: pointer;
     padding: 1.5rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: bold;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 
@@ -97,7 +86,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $size-small) {
   .landing-container {
     .container-heading {
       .heading-name {

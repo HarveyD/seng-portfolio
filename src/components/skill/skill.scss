@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0.45rem 1.45rem 0.45rem;
+  margin: 0 0.85rem 1.45rem 0.85rem;
   transition: 0.25s color ease-in-out;
 
   .icon {
@@ -39,7 +39,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $size-small) {
   .skill-container {
     &.small {
       .icon {

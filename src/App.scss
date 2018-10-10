@@ -49,6 +49,30 @@
     width: 100%;
     padding: 2.25rem 0 3.75rem 0;
 
+    h2 {
+      margin: 0 0 2.5rem 0;
+
+      &:after {
+        content: "";
+        margin-top: 0.45rem;
+        border-bottom: 1px solid #f9873b;
+        width: 50%;
+        position: relative;
+        height: 1px;
+        display: block;
+        left: 25%;
+      }
+    }
+
+    .content-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      max-width: 968px;
+    }
+
     &.section-secondary {
       background-color: $background-secondary;
     }
@@ -62,28 +86,15 @@
       background-color: $dark;
       color: white;
     }
-
-    h2 {
-      margin: 0 0 2.5rem 0;
-    }
-
-    .content-container {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-
-      max-width: 968px;
-    }
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $size-small) {
   .app-container {
     .content-container {
       margin: 0;
     }
-  
+
     .section {
       padding: 1.5rem 0 2.25rem 0;
     }

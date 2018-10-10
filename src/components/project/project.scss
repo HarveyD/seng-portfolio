@@ -85,7 +85,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $size-small) {
   .project-container {
       width: 100%;
   }

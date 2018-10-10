@@ -55,7 +55,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $size-small) {
   .social-item-container {
     width: 42.5%;
     align-items: center;

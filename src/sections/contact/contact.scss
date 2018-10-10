@@ -1,7 +1,7 @@
 @import "../../variables.scss";
 
 .contact-container {
-  width: 768px;
+  width: $size-small;
   display: flex;
   flex-direction: column;
 
@@ -71,7 +71,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $size-small) {
   .contact-container {
     width: 100%;
 
