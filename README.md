@@ -26,14 +26,14 @@ Although I created this template from scratch, the design of the website is heav
 
 ## Contents
 - [Getting Started](Getting Started)
-- [Landing](Landing)
-- [About](About)
-- Experience
-- Education
-- Projects
-- Skills
-- Contact
-- [Troubleshooting](Troubleshooting Information)
+- [Landing] (#landing)
+- [About] (#about)
+- [Experience] (#experience)
+- [Education] (#education)
+- [Projects] (#projects)
+- [Skills] (#skills)
+- [Contact] (#contact)
+- [Troubleshooting] (#Troubleshooting Information)
 
 ## Getting Started
 To start modifying and customising the project to yourself, you'll need to fork the project.
@@ -44,7 +44,7 @@ Run `npm i` followed by `npm start`, then navigate to `localhost:3000` and you s
 
 A majority of the things you will need to change are in `src/components/services/portfolio-data.service.tsx`
 
-Refer to [Create React App](https://github.com/facebook/create-react-app) documentation if you encounter any issues running the app. Or refer to the [Troubleshooting](Troubleshooting Information) section
+Refer to [Create React App](https://github.com/facebook/create-react-app) documentation if you encounter any issues running the app. Or refer to the [Troubleshooting] (#Troubleshooting Information) section
 
 ## Landing
 Two things can be easily changed here:
