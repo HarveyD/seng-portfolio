@@ -11,7 +11,6 @@
   background: url("../../assets/images/landing.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position-x: 75%;
 
   .landing-overlay {
     position: absolute;
@@ -22,7 +21,7 @@
     height: 100vh;
     width: 100vw;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   .container {

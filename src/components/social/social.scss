@@ -32,7 +32,7 @@
 
   &.ln:hover {
     .icon-container {
-      background-color: rgba(0, 119, 181, 0.7);
+      background-color: rgba(9, 125, 187, 0.7);
     }
   }
 
@@ -51,6 +51,12 @@
   &.bl:hover {
     .icon-container {
       background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  &.fb:hover {
+    .icon-container {
+      background-color: rgba(92, 4, 255, 0.7);
     }
   }
 }
