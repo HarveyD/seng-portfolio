@@ -11,7 +11,7 @@ interface IProps {
 
 const Skills: React.StatelessComponent<IProps> = ({skillList}) => {
   return (
-    <div className="section section-primary">
+    <section className="section section-primary">
       <h2>Skills</h2>
 
       <div className="skills-container">
@@ -19,7 +19,7 @@ const Skills: React.StatelessComponent<IProps> = ({skillList}) => {
           <Skill key={i} skill={skill} size="large" />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

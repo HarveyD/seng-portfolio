@@ -48,7 +48,7 @@ class Landing extends React.Component<IProps, IState> {
     const  { name, title, findOutMore } = this.state;
 
     return (
-      <div className="landing-container">
+      <section className="landing-container">
         <div className="landing-overlay" />
 
         <div className="container container-heading">
@@ -68,7 +68,7 @@ class Landing extends React.Component<IProps, IState> {
           <span className="find-out">Find out more about {userDetails.firstName}</span>
           <i className="fa fa-chevron-down" />
         </div>
-      </div>
+      </section>
     );
   }
 

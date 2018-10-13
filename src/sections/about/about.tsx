@@ -17,13 +17,13 @@ interface IProps {
 
 const About: React.StatelessComponent<IProps> = ({aboutTextList}) => {
   return (
-    <div className="section section-primary section-about">
+    <section className="section section-primary section-about">
       <h2>About Harvey</h2>
       <div className="content-container about-container">
         <img className="portrait" src={Portait} />
         {renderAboutText(aboutTextList)}
       </div>
-    </div>
+    </section>
   );
 };
 

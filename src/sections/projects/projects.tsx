@@ -34,7 +34,7 @@ class Projects extends React.Component<IProps, IState> {
     const { selectedProject } = this.state;
 
     return (
-      <div className="section section-secondary">
+      <section className="section section-secondary">
         <h2>Projects</h2>
 
         <div className="projects-container">
@@ -53,7 +53,7 @@ class Projects extends React.Component<IProps, IState> {
             modalExitEvent={this.handleModalExit}
           />
         )}
-      </div>
+      </section>
     );
   }
 }

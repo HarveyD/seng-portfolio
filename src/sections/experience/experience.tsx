@@ -9,7 +9,7 @@ interface IProps {
 
 const Experience: React.StatelessComponent<IProps> = ({experienceList}) => {
   return (
-    <div className="section section-secondary">
+    <section className="section section-secondary">
       <h2>Experience</h2>
 
       <div className="content-container experience-container">
@@ -17,7 +17,7 @@ const Experience: React.StatelessComponent<IProps> = ({experienceList}) => {
           <InfoCard key={i} cardDetails={exp} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

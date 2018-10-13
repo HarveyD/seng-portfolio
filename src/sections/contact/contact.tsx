@@ -9,7 +9,7 @@ interface IProps {
 
 const Contact: React.StatelessComponent<IProps> = ({socialIconList}) => {
   return (
-    <div className="section section-theme">
+    <section className="section section-theme">
       <h2>Contact</h2>
 
       <div className="contact-container">
@@ -29,7 +29,7 @@ const Contact: React.StatelessComponent<IProps> = ({socialIconList}) => {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
