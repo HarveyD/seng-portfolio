@@ -47,6 +47,11 @@ A majority of the things you will need to change are in `src/components/services
 
 Refer to [Create React App](https://github.com/facebook/create-react-app) documentation if you encounter any issues running the app. Or refer to the [Troubleshooting](#Troubleshooting Information) section
 
+## Colours and Font
+Most colours used within the app are located within `variables.scss`, change all the colours to meet your needs. 
+
+Global font family/font-sizes etc. are located within `App.scss`.
+
 ## Landing
 Two things can be easily changed here:
 - Landing page image:
