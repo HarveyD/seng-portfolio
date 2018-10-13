@@ -28,7 +28,7 @@
     "eject": "react-scripts-ts eject",
     "prerender": "react-snap"
   },
-  "homepage": "http://www.harveydelaney.com",
+  "homepage": "http://www.harveydelaney.com/seng-portfolio",
   "devDependencies": {
     "@types/jest": "^23.3.2",
     "@types/node": "^10.10.2",
