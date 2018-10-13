@@ -15,7 +15,7 @@ class App extends React.Component {
   public render() {
     return (
       <div className="app-container">
-        <Landing userDetails={PortfolioDataService.user} />
+        <Landing userDetails={PortfolioDataService.userDetails} />
         <About aboutTextList={PortfolioDataService.aboutTextList} />
         <Experience experienceList={PortfolioDataService.experienceList} />
         <Education educationList={PortfolioDataService.educationList} />
