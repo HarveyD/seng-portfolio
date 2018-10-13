@@ -102,6 +102,9 @@ These are a list of things I might introduce into the project:
 - Add a header with all the sections available in the website. On click of the section, it will auto scrol; to the section
 
 ## Troubleshooting Information
+### Bugs
+It seems that `react-snap` prevents the classes being applied on the landing page - this results in no animations being played after `react-snap` is run. I'll have to see how I can fix this.
+
 ### Windows
 - If an issue is encountered around running `npm start` try: `npm i -g react-scripts`
 
