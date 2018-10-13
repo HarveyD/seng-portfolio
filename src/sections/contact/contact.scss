@@ -11,7 +11,7 @@
     flex-direction: row !important;
     flex-wrap: wrap;
     justify-content: space-around;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $font-light;
     padding-bottom: 2.25rem;
   }
 
@@ -29,7 +29,7 @@
       input,
       textarea {
         background-color: $theme-dark;
-        color: white;
+        color: $font-light;
         border: none;
         border-radius: 0.25rem;
         padding: 0.75rem;
@@ -38,7 +38,7 @@
         transition: 0.25s background-color ease-in-out;
 
         &::placeholder {
-          color: white;
+          color: $font-light;
         }
 
         &:focus {
@@ -54,8 +54,8 @@
 
       button {
         background-color: $theme-color;
-        border: 1px solid white;
-        color: white;
+        border: 1px solid $font-light;
+        color: $font-light;
         border-radius: 0.25rem;
         padding: 0.75rem;
         font-size: 1.15rem;
@@ -63,7 +63,7 @@
         cursor: pointer;
 
         &:hover {
-          background-color: white;
+          background-color: $font-light;
           color: $theme-color;
         }
       }

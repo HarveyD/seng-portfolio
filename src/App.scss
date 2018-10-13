@@ -79,12 +79,12 @@
 
     &.section-theme {
       background-color: $theme-color;
-      color: white;
+      color: $font-light;
     }
 
     &.section-dark {
       background-color: $dark;
-      color: white;
+      color: $font-light;
     }
   }
 }
