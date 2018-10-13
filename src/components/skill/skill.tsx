@@ -38,7 +38,7 @@ export const skillMap: Map<SkillEnum, ISkill>  = new Map<SkillEnum, ISkill> ([
   [SkillEnum.nginx, { name: "Nginx", icon: "nginx" }],
   [SkillEnum.vs, { name: "Visual Studio", icon: "visualstudio" }],
   [SkillEnum.android, { name: "Android", icon: "android", showAsDefault: false }],
-  [SkillEnum.ionic, { name: "Ionic", icon: "ionic", faIcon: "code", showAsDefault: false }],
+  [SkillEnum.ionic, { name: "Ionic", icon: "", faIcon: "code", showAsDefault: false }],
   [SkillEnum.websockets, { name: "Websockets", icon: "", faIcon: "plug", showAsDefault: false }],
   [SkillEnum.panelleum, { name: "Panelleum", icon: "", faIcon: "columns", showAsDefault: false }],
   [SkillEnum.processing, { name: "Processing", icon: "", faIcon: "code", showAsDefault: false }],

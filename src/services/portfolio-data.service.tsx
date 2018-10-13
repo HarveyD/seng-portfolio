@@ -6,7 +6,7 @@ import { skillMap } from "../components/skill/skill";
 import { ISocialIcon } from "../components/social/social";
 
 export default class PortfolioDataService {
-  public static readonly user: IUserDetails = {
+  public static readonly userDetails: IUserDetails = {
     firstName: "Harvey",
     lastName: "Delaney",
     title: "Software Engineer"
