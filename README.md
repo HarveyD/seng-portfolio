@@ -1,5 +1,6 @@
 # Software Engineer Portfolio Template
 ### By Harvey Delaney
+![](https://i.imgur.com/sUdc6c4.gif)
 ## Introduction
 When I started working as a Software Engineer, I wanted to create my own (software engineering) portfolio website. I wanted it to display my experience, education, projects and skills. At the time, I wasn't so great at designing websites and looked around for a portfolio template which would help me get started. On Reddit, I found the [devportfolio](https://github.com/RyanFitzgerald/devportfolio) template by Ryan Fitzgerald.
 
@@ -25,15 +26,15 @@ Although I created this template from scratch, the design of the website is heav
 - FontAwesome4 + DevIcon available
 
 ## Contents
-- [Getting Started](Getting Started)
-- [Landing] (#landing)
-- [About] (#about)
-- [Experience] (#experience)
-- [Education] (#education)
-- [Projects] (#projects)
-- [Skills] (#skills)
-- [Contact] (#contact)
-- [Troubleshooting] (#Troubleshooting Information)
+- [Getting Started](#getting-started)
+- [Landing](#landing)
+- [About](#about)
+- [Experience](#experience)
+- [Education](#education)
+- [Projects](#projects)
+- [Skills](#skills)
+- [Contact](#contact)
+- [Troubleshooting](#troubleshooting-information)
 
 ## Getting Started
 To start modifying and customising the project to yourself, you'll need to fork the project.
@@ -44,7 +45,7 @@ Run `npm i` followed by `npm start`, then navigate to `localhost:3000` and you s
 
 A majority of the things you will need to change are in `src/components/services/portfolio-data.service.tsx`
 
-Refer to [Create React App](https://github.com/facebook/create-react-app) documentation if you encounter any issues running the app. Or refer to the [Troubleshooting] (#Troubleshooting Information) section
+Refer to [Create React App](https://github.com/facebook/create-react-app) documentation if you encounter any issues running the app. Or refer to the [Troubleshooting](#Troubleshooting Information) section
 
 ## Landing
 Two things can be easily changed here:
@@ -68,7 +69,7 @@ Add as many entries as you had jobs to `experienceList` which match the interfac
 Similar to Experience, add entries for each education item to `educationList` which match the interface definition `IInfoCard`
 
 ## Project
-For each project you have done, fill create an entry in `projectList`, matching the `IProject` interface. The taglist (each skill associated with the project) has to be an enum within `SkillEnum`. More information about skills is [here.](Skills)
+For each project you have done, fill create an entry in `projectList`, matching the `IProject` interface. The taglist (each skill associated with the project) has to be an enum within `SkillEnum`. More information about skills is [here.](#Skills)
 
 ## Skills
 I am using two font libraries to render the skill icons:
