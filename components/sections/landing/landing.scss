@@ -1,0 +1,118 @@
+@import "../../variables.scss";
+
+.landing-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  background: url("/static/images/landing.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  .landing-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $font-light;
+    z-index: 20;
+  }
+
+  .container-heading {
+    .heading-name {
+      font-size: 6.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .heading-title {
+      font-size: 3.15rem;
+    }
+
+    .heading-name,
+    .heading-title {
+      text-align: center;
+      transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    }
+  }
+
+  .container-footer {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+
+    .find-out {
+      padding-bottom: 0.5rem;
+    }
+
+    .fa-chevron-down {
+      font-size: 1.5rem;
+
+      animation: pulse-infinite 3.5s infinite;
+    }
+  }
+
+  .hide-down {
+    transform: translateY(264px);
+    opacity: 0;
+  }
+
+  .hide-up {
+    transform: translateY(-264px);
+    opacity: 0;
+  }
+
+  .show {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: $size-small) {
+  .landing-container {
+    .container-heading {
+      .heading-name {
+        font-size: 3.5rem;
+      }
+
+      .heading-title {
+        font-size: 2rem;
+      }
+
+      .heading-name,
+      .heading-title {
+        margin: 0 1.5rem 1rem 1.5rem;
+      }
+    }
+  }
+}
+
+// Todo: add vendor prefixes Sass
+@keyframes pulse-infinite {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
