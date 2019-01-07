@@ -19,12 +19,12 @@ const SocialIcon: React.StatelessComponent<IProps> = props => {
   } = props;
 
   return (
-    <div className={`social-item-container ${id}`} onClick={() => window.open(url)}>
+    <a href={url} className={`social-item-container ${id}`}>
       <div className="icon-container">
         <i className={`icon fab ${icon}`} />
       </div>
       <span className="name">{name}</span>
-    </div>
+    </a>
   );
 };
 

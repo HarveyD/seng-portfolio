@@ -5,6 +5,8 @@
   flex-direction: column;
   margin: 0 .5rem 1.25rem .5rem;
   max-width: 124px;
+  text-decoration: none;
+  color: $font-light;
 
   .icon-container {
     display: flex;

@@ -43,10 +43,12 @@ const renderButtons = (url: IUrl) => (
 class ProjectModal extends React.Component<IProps> {
   public componentDidMount() {
     document.body.classList.add("disable-scroll");
+    document.documentElement.classList.add("disable-scroll");
   }
 
   public componentWillUnmount() {
     document.body.classList.remove("disable-scroll");
+    document.documentElement.classList.remove("disable-scroll");
   }
 
   public render() {
