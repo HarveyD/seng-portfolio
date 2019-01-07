@@ -99,8 +99,9 @@
             border: none;
             transition: 0.25s background-color ease-in-out;
             cursor: pointer;
+            text-decoration: none;
     
-            .fa {
+            .fa, .fab {
               padding-left: 0.35rem;
             }
           }
@@ -152,7 +153,7 @@
       overflow: hidden;
 
       .modal-body-container {
-        flex: none;
+        flex: 4;
 
         .header-container {
           margin: 0;

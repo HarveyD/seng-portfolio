@@ -20,22 +20,20 @@ const renderTechnologies = (skillList: SkillEnum[]) =>
 const renderButtons = (url: IUrl) => (
   <div className="button-links">
     {url.github && (
-      <button
-        onClick={() => window.open(url.github)}
+      <a href={url.github}
         className="link-button button-github"
       >
         Github
-        <i className="fa fa-github" />
-      </button>
+        <i className="fab fa-github" />
+      </a>
     )}
     {url.website && (
-      <button
-        onClick={() => window.open(url.website)}
+      <a href={url.website}
         className="link-button button-website"
       >
         Website
         <i className="fa fa-link" />
-      </button>
+      </a>
     )}
   </div>
 );
