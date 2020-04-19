@@ -5,7 +5,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "cross-env BASE_PATH=seng-portfolio next export",
+    "export": "next export",
     "type-check": "tsc"
   },
   "dependencies": {
