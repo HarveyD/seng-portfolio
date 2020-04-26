@@ -3,7 +3,7 @@
 ![](https://i.imgur.com/sUdc6c4.gif)
 ## Introduction
 When I started working as a Software Engineer, I wanted to create my own (software engineering) portfolio website. I wanted it to display my experience, education, projects and skills. At the time, I wasn't so great at designing websites and looked around for a portfolio template which would help me get started. On Reddit, I found the [devportfolio](https://github.com/RyanFitzgerald/devportfolio) template by Ryan Fitzgerald.
-
+ 
 I loved the design, simplicity and customisability of it - it had everything I wanted in a template. So I built my portfolio using the template, which is still live [here.](https://www.harveydelaney.com/old-portfolio)
 
 However, as time went on I wanted to add to the portfolio, I was restricted by how it was implemented. I found myself shoehorning new features into the project. So, I decided to create my own portfolio using a more modern stack: React, Typescript and Sass. 
